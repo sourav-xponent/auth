@@ -1,4 +1,4 @@
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthConfig } from "next-auth";
 import { JWT } from "next-auth/jwt";
 import { Account, User, Session } from "next-auth";
 import { PrismaAdapter } from "@auth/prisma-adapter";
@@ -8,7 +8,7 @@ import { getUserById } from "@/data/user";
 import { getAccountByUserId } from "./data/account";
 import authConfig from "./auth.config";
 
-export const authOptions = {
+export const authOptions: any = {
   pages: {
     signIn: "/auth/login",
     error: "/auth/error",
