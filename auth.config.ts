@@ -10,8 +10,8 @@ import { LoginSchema } from "./schemas/auth";
 export default {
   providers: [
     Google({
-      clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET!,
+      clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     }),
     Github({
       clientId: process.env.GITHUB_CLIENT_ID!,
